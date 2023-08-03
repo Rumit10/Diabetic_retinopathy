@@ -1,0 +1,160 @@
+
+</html><html lang="en" >
+    <head>
+      <meta charset="UTF-8">
+      <title>About</title>
+      <link rel='stylesheet' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
+    <style>*, *:before, *:after {
+        -webkit-box-sizing: inherit;
+        box-sizing: inherit;
+      }
+      html {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Hind', sans-serif;
+        background: rgb(111, 226, 241);
+        color: #4d5974;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        min-height: 100vh;
+        background: url("http://html.xpeedstudio.com/agmycoo/assets/images/welcome/welcome-icon-bg-3.png");
+      }
+      .container {
+        margin: 0 auto;
+        padding: 4rem;
+        width: 48rem;
+        border: 2px solid rgb(138, 119, 119);
+        border-radius: 8px ;
+        background: transparent;
+        box-shadow: 20px 20px 40px #888888;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      h1 {
+        font-size: 3.5rem;
+        color: #01030c;
+        padding: 1rem;
+        margin-left: 200px;
+      }
+      h4{
+          color: #01030c;
+          font-size: 1rem;
+      }
+      .accordion a {
+        position: relative;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 100%;
+        padding: 1rem 3rem 1rem 1rem;
+        color: #7288a2;
+        font-size: 1.15rem;
+        font-weight: 400;
+        border-bottom: 1px solid #e5e5e5;
+      }
+      .accordion a:hover,
+      .accordion a:hover::after {
+        cursor: pointer;
+        color: #ff5353;
+      }
+      .accordion a:hover::after {
+        border: 1px solid #ff5353;
+      }
+      .accordion a.active {
+        color: #ff5353;
+        border-bottom: 1px solid #ff5353;
+      }
+      .accordion a::after {
+        font-family: 'Ionicons';
+        content: '\f218';
+        position: absolute;
+        float: right;
+        right: 1rem;
+        font-size: 1rem;
+        color: #7288a2;
+        padding: 5px;
+        width: 30px;
+        height: 30px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        border: 1px solid #7288a2;
+        text-align: center;
+      }
+      .accordion a.active::after {
+        font-family: 'Ionicons';
+        content: '\f209';
+        color: #ff5353;
+        border: 1px solid #ff5353;
+      }
+      .accordion .content {
+        opacity: 0;
+        padding: 0 1rem;
+        max-height: 0;
+        border-bottom: 1px solid #e5e5e5;
+        overflow: hidden;
+        clear: both;
+        -webkit-transition: all 0.2s ease 0.15s;
+        -o-transition: all 0.2s ease 0.15s;
+        transition: all 0.2s ease 0.15s;
+      }
+      .accordion .content p {
+        font-size: 1rem;
+        font-weight: 300;
+      }
+      .accordion .content.active {
+        opacity: 1;
+        padding: 1rem;
+        max-height: 100%;
+        -webkit-transition: all 0.35s ease 0.15s;
+        -o-transition: all 0.35s ease 0.15s;
+        transition: all 0.35s ease 0.15s;
+      }</style>
+    </head>
+    <body>
+     
+    <div class="container">
+     
+      <h1>About us</h1>
+      <h4> <pre>    We created a model, which represents a direction for automatic 
+detection of Diabetic Retinopathy in FundusPhotographs. To predict the
+severity of diabetic retinopathy we have implemented a method that is 
+based on the classification of disease which is followed by feature 
+extraction from the pixel level result and a machine learning method. 
+
+Our method was performed on test data from the Kaggle competition.
+Our method approaches the processing of Fundus Photographs with Neural 
+Network and detecting the level of Diabetic Retinopathy in patients.
+    
+                Our Team....
+                        1.Rumit 
+                        2.Sarang
+                        3.Atharva
+                        4.Akash
+    </pre> </h4>
+    </div>
+     
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+    <script >const items = document.querySelectorAll(".accordion a");
+  
+        function toggleAccordion(){
+          this.classList.toggle('active');
+          this.nextElementSibling.classList.toggle('active');
+        }
+         
+        items.forEach(item => item.addEventListener('click', toggleAccordion));</script>
+     
+    </body>
+    </html>
